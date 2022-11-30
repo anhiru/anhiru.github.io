@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
   <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Andrew Tran">
-  <title>andrew tran</title>
+  <title>contact me!</title>
 </head>
 <body>
   <nav id="topnav">
@@ -71,25 +71,23 @@
       </section>
     </div>
   </nav>
-  <main id="work">
-    <div class="grid-container">
-        <div class="grid-item">
-          <a href="https://humaninterest.com/about-us/" target="_blank"><img class="tile" src="assets/img/humaninterest.png" alt="Human Interest" /></a>
-          <p class="caption"></p>
-        </div>
-        <div class="grid-item">
-          <a href="https://zenuriken.itch.io/bears-bobaria" target="_blank"><img class="tile" src="assets/img/bearsbobaria.png" alt="Bear's Bobaria" /></a>
-          <p class="caption"></p>
-        </div>
-        <div class="grid-item">
-          <a href="https://twitter.com/dailycolorbot" target="_blank"><img class="tile" src="assets/img/colorbot.png" alt="COLOR BOT" /></a>
-          <p class="caption"></p>
-        </div>
-        <div class="grid-item">
-          <a href="https://docs.google.com/presentation/d/1ssKuBE0oTCIqgxnB_IlMD9C7vjYhm2fhr14dQ1riijo/edit?usp=sharing" target="_blank"><img class="tile" src="assets/img/commute.png" alt="commute." /></a>
-          <p class="caption"></p>
-        </div>
-    </div>
+  <main id="contact">
+    <h1 id="prompt">inbox: open</h1>
+    <form>
+      <div class="form-group">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="user_name" placeholder="Peter Parker" required />
+      </div>
+      <div class="form-group">
+        <label for="mail">Email:</label>
+        <input type="text" id="mail" name="user_email" placeholder="peterbparkersayshi@gmail.com" required />
+      </div>
+      <div class="form-group">
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message" placeholder="With great power, comes great..." required></textarea>
+      </div>
+      <button type="submit" onclick="handleClick()">Deliver</button>
+    </form>
   </main>
   <script src="assets/script/script.js"></script>
 </body>

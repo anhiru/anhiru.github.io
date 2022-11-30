@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Calluna";
+  src: url("../font/Calluna/Calluna-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gascogne";
+  src: url("../font/Gascogne/Gascogne-Regular.ttf");
+}
+
+#about {
+  display: flex;
+  margin-top: 90px;
+  margin-left: 300px;
+}
+
+#me {
+  height: 30%;
+  width: 30%;
+  padding: 40px 60px;
+}
+
+#greeting {
+  font-family: "Calluna", serif;
+}
+
+.bio {
+  display: block;
+  font-family: "Gascogne", serif;
+  font-size: 18px;
+  margin-top: 80px;
+  margin-right: 50px;
+}

@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Calluna";
+  src: url("../font/Calluna/Calluna-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gascogne";
+  src: url("../font/Gascogne/Gascogne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url("../font/NeueHaasUnica/NeueHaasUnica-Bold.ttf");
+}
+
+h1, h2, h3, h4, a, p, label {
+  color: #34241d;
+}
+
+body {
+  background-color: #d2d2e1;
+  margin: 0px;
+}
+
+#topnav {
+  background-color: #b3b3cd;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  overflow-y: hidden;
+}
+
+#topnav a {
+  font-family: "Neue Haas Unica", sans-serif;
+  float: right;
+  margin-right: 60px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+#sidenav {
+  background-color: #b3b3cd;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  overflow-x: hidden;
+}
+
+.sidenav-item {
+  display: block;
+  padding: 10px 15px 20px 30px;
+  text-decoration: none;
+}
+
+.description, .social, .info {
+  font-family: "Gascogne", serif;
+}
+
+.description {
+  margin-top: 83px;
+}
+
+#name {
+  color: inherit;
+  font-family: "Calluna", serif;
+  font-size: 52px;
+  text-decoration: none;
+}
+
+.social a img {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin: 20px 50px 20px 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.flex-container {
+  margin: -20px 0px;
+  display: flex;
+}
+
+h4 {
+  position: relative;
+  left: 10px;
+}
+
+.darkmode h1, .darkmode h2, .darkmode h3, .darkmode h4, .darkmode a, .darkmode p, .darkmode label {
+  color: #fbfaf5;
+}
+
+#topnav.darkmode {
+  background-color: #121212;
+}
+
+#sidenav.darkmode {
+  background-color: #121212;
+}
+
+.darkmode {
+  background-color: #242424;
+}
+
+.label {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 50px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.label:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  background: white;
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s linear;
+}
+
+.checkbox {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+.checkbox:checked + .label {
+  background: #242424;
+}
+
+.checkbox:checked + .label:after {
+  left: 55px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.label, .label:after {
+  transition: 0.3s
+}
+
+.label:active:after {
+  width: 35px;
+}
+
+.filter-blue {
+  filter: invert(30%) sepia(97%) saturate(1065%) hue-rotate(174deg) brightness(90%) contrast(101%);
+}
+
+.filter-black {
+  filter: invert(9%) sepia(6%) saturate(384%) hue-rotate(314deg) brightness(95%) contrast(100%);
+}
+
+.filter-green {
+  filter: invert(46%) sepia(14%) saturate(1495%) hue-rotate(84deg) brightness(93%) contrast(96%);
+}
+
+.darkmode .filter-black {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(223deg) brightness(103%) contrast(103%);
+}

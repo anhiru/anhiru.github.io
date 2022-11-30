@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Gascogne";
+  src: url("../font/Gascogne/Gascogne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url("../font/NeueHaasUnica/NeueHaasUnica-Bold.ttf");
+}
+
+#contact {
+  font-family: "Neue Haas Unica", sans-serif;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+#prompt {
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.form-group {
+  margin: 20px 0px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px 5px;
+  font-family: "Gascogne", serif;
+  font-size: 16px;
+}
+
+textarea {
+  height: 300px;
+  width: 100%;
+  padding: 5px;
+  font-family: "Gascogne", serif;
+  font-size: 16px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+}
